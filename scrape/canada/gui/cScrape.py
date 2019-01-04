@@ -16,7 +16,7 @@ class Scraper:
         self.name = name
         self.location = location
         self.phone_no = phone_no
-        self.url = "http://www.canada411.ca/search/si/{}/{}/{}/".format(self.page, name, location)
+        self.url = "http:///{}/{}/{}/".format(self.page, name, location)
 
     def getPage(self):
         uClient = UReq(self.url)
@@ -51,7 +51,7 @@ class Scraper:
 
     def changePageNumber(self):
         self.page = self.page + 1
-        self.url = "http://www.canada411.ca/search/si/{}/{}/{}/".format(self.page, self.name, self.location)
+        self.url = "http://".format(self.page, self.name, self.location)
 
 
 

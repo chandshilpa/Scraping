@@ -12,7 +12,7 @@ class Scraper:
                     ca_certs = where() 
                 )
         self.page = 1 
-        self.url = "https://thephonebook.bt.com/Person/PersonSearch/"
+        self.url = 
         self.name = "?Surname={}".format(name) 
         self.location = "&Location={}".format(location) 
         self.street = "&Street={}".format(street) 
